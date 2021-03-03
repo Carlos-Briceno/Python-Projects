@@ -1,0 +1,73 @@
+Python 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> B = "Let's do some math!"
+>>> print(B)
+Let's do some math!
+>>> X = 10
+>>> print(X=10")
+      
+SyntaxError: invalid syntax
+>>> print("X = 10")
+X = 10
+>>> print("X + 5 equals:")
+X + 5 equals:
+>>> print(X + 5)
+15
+>>> A = 5
+>>> print("A = 5")
+A = 5
+>>> print(A - -X)
+15
+>>> print("X times A equals:")
+X times A equals:
+>>> print(X * A)
+50
+>>> print("X divided by A equals:")
+X divided by A equals:
+>>> print(X / A)
+2
+>>> print("Is X larger than A?:")
+Is X larger than A?:
+>>> print(X > A)
+True
+>>> print("Is X less than A?:")
+Is X less than A?:
+>>> print(X < A)
+False
+>>> print("Are X and A equal?:")
+Are X and A equal?:
+>>> print(X == A)
+False
+>>> if X > A:
+	print("X (being 10) is larger than A (which is 5)")
+
+	
+X (being 10) is larger than A (which is 5)
+>>> name = "BILLY"
+>>> print(name)
+BILLY
+>>> print("Now it is time to print BILLY in all lower case letters: " + name.lower())
+Now it is time to print BILLY in all lower case letters: billy
+>>> list_names = ["Billy", "Sally", "Johnny", "Raphael"]
+>>> print("Here's the list we created: ")
+Here's the list we created: 
+>>> print(list_names)
+['Billy', 'Sally', 'Johnny', 'Raphael']
+>>> print("Here's the third name from the list we wrote in all caps: " + list_names[2].upper())
+Here's the third name from the list we wrote in all caps: JOHNNY
+>>> date = "July/14th/1987"
+>>> print("Here's the date we created: " + date)
+Here's the date we created: July/14th/1987
+>>> split_date = date.split("/")
+>>> print("Here's the date we entered split aprt: ")
+Here's the date we entered split aprt: 
+>>> print(split_date)
+['July', '14th', '1987']
+>>> another_name = "Diane"
+>>> print("We chose the name: " + another_name)
+We chose the name: Diane
+>>> print("Here's " + another_name + " written with the cases swapped: " + another_name.swapcase())
+Here's Diane written with the cases swapped: dIANE
+>>> 
+
+Hello World!
