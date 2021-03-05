@@ -27,17 +27,17 @@ conn = sqlite3.connect('my.db')
 with conn:
     cur = conn.cursor()
     cur.execute("INSERT INTO tbl_file(col_fname) VALUES (?)", \
-                ('Hello.txt'))
+                ('Hello.txt,'))
     cur.execute("INSERT INTO tbl_file(col_fname) VALUES (?)", \
-                ('myImage.png'))
+                ('myImage.png,'))
     cur.execute("INSERT INTO tbl_file(col_fname) VALUES (?)", \
-                ('myMovie.mpg'))
+                ('myMovie.mpg,'))
     cur.execute("INSERT INTO tbl_file(col_fname) VALUES (?)", \
-                ('World.txt'))
+                ('World.txt,'))
     cur.execute("INSERT INTO tbl_file(col_fname) VALUES (?)", \
-                ('data.pdf'))
+                ('data.pdf,'))
     cur.execute("INSERT INTO tbl_file(col_fname) VALUES (?)", \
-                ('myPhoto.jpg'))
+                ('myPhoto.jpg,'))
     conn.commit()
 conn.close()
 
@@ -45,15 +45,18 @@ conn.close()
 
 conn = sqlite3.connect('my.db')
 
-# this will get all the files ending with .txt
+# this will get all the files ending with t
 
-with conn:
-    cur = conn.cursor()
-    cur.execute("SELECT col_fname FROM tbl_file WHERE col_fname = '.txt'")
-    varPerson = cur.fetchall()
-    for item in varPerson:
-        msg = "File: {}".format(item[0])
-    print(msg)
+for x in col_fname:
+    if x.endswith('t'):
+        with conn:
+            cur = conn.cursor()
+        # will denote a one element tuple for each file ending with t 
+            cur.execute("INSERT INTO tbl_file (col_fname) VALUES (?)", (x))
+            print(x)
+conn.close()
+        
+        
 
             
 
