@@ -3,17 +3,16 @@
 # Parent class 
 
 class User:
-    name = 'No name Provided'
-    email = ' '
-    password = '12345hhyt'
+    name = ' '
     account_number = 0
-
+    email = ' '
+    
 # these are a child class and (User) will add the parent attributes
 
+class Ceo(User):
+    base_pay = '100k','Salary'
+    
 class Employee(User):
-    base_pay = 15.50
-    department = 'Team Lead'
-
-class Customer(User):
-    mailing_address = ' '
-    mailing_list = True
+    Department = 'Store Manager'
+    To_do_list = 'Open Store' 
+    
