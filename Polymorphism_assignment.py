@@ -55,7 +55,8 @@ class Employee(Ceo):
 
 
         
-
+obj1 = Employee()
+obj1.getLoginInfo()
 
 
 
