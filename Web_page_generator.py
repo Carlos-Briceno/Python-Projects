@@ -29,8 +29,6 @@ def setTextInput(text):
         
 
 # this will show in an html file when opened
-url = "D:/cxbri/Python-Projects/Web_page_generator.html"
-webbrowser.open_new_tab(url)
 
 text = tk.Entry(root)
 text.pack()
