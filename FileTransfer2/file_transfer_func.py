@@ -47,6 +47,6 @@ def file_check(self):
     for i in files:
         new_files = datetime.datetime.now() - datetime.timedelta(hours=24)
         mod_time = datetime.datetime.fromtimestamp(os.stat(self.src + '/' + i).st_mtime)
-        if mod_time < new_files:
+        if mod_time > new_files:
             shutil.move((self.src + '/' + i), self.dst + '/' + i)
             print(i + "\nhas been moved.\n")
