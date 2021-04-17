@@ -12,4 +12,5 @@
 
 
   # Check Files GUI
-    This project allows the user to transfer all .txt files 
+    This project allows the user to transfer all .txt files from one chosen directory to another.
+    All files that are moved will be saved in a database.
